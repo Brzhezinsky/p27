@@ -1,16 +1,16 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
 
-export default class BtnPlus extends React.Component {
+export default class ButtonPlus extends React.Component {
 
-    render() {
-      return (
-        <TouchableOpacity
-          style={styles.plusbutton}>
-          <Text style={styles.plustext}>+</Text>
-        </TouchableOpacity>
-      );
-    }
+  render() {
+    return (
+      <TouchableOpacity
+        style={styles.plusbutton} onPress={this.props.onPress}>
+        <Text style={styles.plustext}>+</Text>
+      </TouchableOpacity>
+    );
+  }
 
 }
 
